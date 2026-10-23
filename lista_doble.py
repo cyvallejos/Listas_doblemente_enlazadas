@@ -75,6 +75,13 @@ def eliminar(dato):
     return True
 
 
+# Reflexión: Lo más difícil fue mantener sincronizados los enlaces "anterior"
+# y "siguiente", especialmente al modificar el primer o el último nodo.
+# Para evitar enlaces rotos, actualicé las referencias de ambos nodos vecinos
+# y, cuando correspondía, también "cabeza" o "cola". Comprobé la lista
+# recorriéndola hacia adelante y hacia atrás.
+
+
 if __name__ == "__main__":
     # Paso 1
     cabeza = None
