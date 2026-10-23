@@ -4,7 +4,6 @@
 cabeza = None
 cola = None
 
-
 def crear_nodo(dato):
     return {"dato": dato, "anterior": None, "siguiente": None}
 
